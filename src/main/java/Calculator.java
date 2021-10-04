@@ -1,19 +1,19 @@
 public class Calculator {
-    public double doMath(String operation, int firstValue, int secondValue, double answer) {
+   public double doMath(char operation, int firstValue, int secondValue) {
 
         switch (operation) {
-            case "+":
-                return answer = firstValue + secondValue;
-            case "-":
-                return answer = firstValue - secondValue;
-            case "*":
-                return answer = firstValue * secondValue;
-            case "/":
-                return answer = firstValue / secondValue;
+            case '+':
+                return  firstValue + secondValue;
+            case '-':
+                return  firstValue - secondValue;
+            case '*':
+                return firstValue * secondValue;
+            case '/':
+                return  firstValue / secondValue;
             default:
                 System.out.println("Your operation is not correct! Input correct operation");
+                return 0;
         }
-        return (answer);
     }
 
     public double plus(int firstValue, int secondValue) {
@@ -31,5 +31,7 @@ public class Calculator {
     public double multiply(int firstValue, int secondValue) {
         return firstValue * secondValue;
     }
+
+
 
 }

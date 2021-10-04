@@ -1,8 +1,9 @@
-import org.junit.Test;
-import static org.testng.AssertJUnit.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Test1 {
-    Calculator calculator = new Calculator();
+   Calculator calculator = new Calculator();
 
     @Test
     public void testingCalc1() {
@@ -19,13 +20,13 @@ public class Test1 {
     @Test
     public void testingCalc3() {
         double res2 = calculator.divide(354, 20);
-        assertEquals(17.7, res2);
+        assertEquals(17.0, res2);
     }
 
     @Test
     public void testingCalc4() {
         double res3 = calculator.multiply(64, 4);
-        assertEquals(16.0, res3);
+        assertEquals(256.0, res3);
     }
 
     @Test
@@ -43,6 +44,11 @@ public class Test1 {
     @Test
     public void testingCalc7() {
         double res6 = calculator.multiply(-365, 25);
-        assertEquals(-14.6, res6);
+        assertEquals(-9125.0, res6);
     }
+
+
+
+
+
 }
